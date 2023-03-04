@@ -9,7 +9,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 <BaseLayout>
   <section class="everydayfeed">
     <div class="section-content">
-      <h2 class="section-head">最新文章</h2>
+      <h2 class="section-head">👀</h2>
       <ul role="list" class="section-tiles">
         {
           // tile-hero
@@ -29,14 +29,14 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
           })
         }
 
-        {
+        <!-- {
           // tile-3up
           allPosts.slice(5, 11).map((post) => {
             return (
               <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="3" />
             );
           })
-        }
+        } -->
       </ul>
     </div>
   </section>
@@ -50,7 +50,7 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
 
         {
           // tile-2up
-          allPosts.slice(0, 6).map((post) => {
+          allPosts.slice(6, 11).map((post) => {
             return (
               <MoreTile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} />
             );
