@@ -21,6 +21,14 @@
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: Font-EN;
+  font-weight: 400;
+  src: url(src/fonts/Lufga-Regular.woff2) format(woff2),
+    url(src/fonts/Lufga-Regular.woff) format(woff);
+  unicode-range: u+0000-007F;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
@@ -125,7 +133,7 @@ button:disabled {
 }
 
 html {
-  font-family: "Lufga", "HarmonyOS Sans", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Font-EN", "HarmonyOS Sans", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 106.25%;
   quotes: "“" "”"
 }
@@ -135,7 +143,7 @@ body {
   line-height: 1.47059;
   font-weight: 400;
   letter-spacing: -.022em;
-  font-family: "Lufga", "HarmonyOS Sans", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Font-EN", "HarmonyOS Sans", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   background-color: #fff;
   color: #1d1d1f;
   font-style: normal;
@@ -331,7 +339,7 @@ a:disabled,
   white-space: nowrap;
 }
 
-.nav-title img{
+.nav-title img {
   margin-right: 8px;
   height: 24px;
 }
@@ -7343,7 +7351,8 @@ span.tag-date {
   }
 }
 
-ul>li, ol>li {
+ul>li,
+ol>li {
   margin: 1em 0px;
 }
 
